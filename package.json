@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc",
     "start": "node build/index.js",
-    "dev": "nodemon src/index.ts"
+    "dev": "nodemon src/index.ts",
+    "postinstall": "prisma generate"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +15,8 @@
   "description": "",
   "dependencies": {
     "@prisma/client": "^6.9.0",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",
